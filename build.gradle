@@ -1,0 +1,31 @@
+apply plugin: 'java'
+
+group = 'com.redgear'
+version = '1.1.0-SNAPSHOT'
+
+description = ""
+
+sourceCompatibility = targetCompatibility = 1.8
+
+
+repositories {
+
+    mavenCentral()
+}
+
+
+dependencies {
+    compile 'com.opencsv:opencsv:3.5'
+    compile 'org.apache.poi:poi:3.9'
+    compile 'org.apache.poi:poi-ooxml:3.9'
+    compile 'org.slf4j:slf4j-api:1.7.13'
+    compile 'javax.validation:validation-api:1.1.0.Final'
+    
+    
+    testCompile 'junit:junit:4.11'
+    testCompile 'org.hibernate:hibernate-validator:5.2.1.Final'
+    testCompile 'org.hibernate:hibernate-validator-annotation-processor:5.2.1.Final'
+    testCompile 'javax.el:javax.el-api:2.2.4'
+    testCompile 'org.glassfish.web:javax.el:2.2.4'
+    testCompile 'ch.qos.logback:logback-classic:1.1.3'
+}
